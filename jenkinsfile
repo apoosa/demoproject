@@ -1,9 +1,9 @@
 pipeline {
     agent any
     triggers {
-         cron('H */1 * * * *')
-         }
- stages {
+         cron('*0/1 * * * *')
+     }
+     stages {
         stage("Hello") {
             steps {
                 echo "Hello World"
